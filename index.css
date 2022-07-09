@@ -1,0 +1,162 @@
+body{
+    font-family: sans-serif;
+    margin-left:10px;
+    margin-top:0%;
+    margin-right:0%;
+    background-color: black;
+    padding-right:0%;
+}
+
+.goals,.frustrations{
+    width:70%
+}
+
+.header{
+    background-color: #05f;
+    color:#fff;
+    height:8vw;
+    align-items: flex-start;
+    font-size: 3vw;
+    font-weight: 5vw;
+}
+.header h1{
+    margin:0px;
+    padding-left:5vw;
+}
+#image {
+    list-style-type:none;
+    background-color: #05f;
+    margin-top:0px;
+    color:#fff;
+    font-size: 1rem;
+    padding-right: 2rem;
+}
+.occupation ul{
+    list-style-type:none;
+    padding-top: 1px;
+}
+.occupation{
+    padding-top: 1px;
+}
+#occupation1 li{
+    padding-left:0px;
+    padding-right:0px;
+    padding-bottom:1px;
+    text-align:right;
+    font-size: 1.3rem;
+    color:#09f;
+}
+#occupation2 li{
+    padding-left:0px;
+    padding-bottom:8px;
+    text-align:left;
+    font-size: .7rem;
+}
+#occupation2 li:first-child{
+    padding-top: 0px;
+}
+.image ul li{
+    padding:8px 10px 8px 3px;
+    margin-left:4px;
+}
+.main{
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+.main ul{
+    font-size: 0.7rem;
+}
+.biography{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#biography li{
+    width:70%;
+    list-style-type: none;
+} 
+.main h1{
+    padding-left:20px;
+    color:#09f;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.technology{
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    padding-right:10px;
+    
+}
+.technology ul{
+    list-style-type: none;
+    font-size:.7rem;
+    line-height: 15px;
+    padding-block-start:0.5px;
+}
+#techspan, #techspan1{
+    font-size: 15px;
+    line-height: 0rem;
+    padding-left: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+
+}
+.main{
+background-color: #fff;
+padding-left:6vw;
+}
+.container{
+    padding-left:4vw;
+    padding-top:1vw;
+}
+
+.occupation .two ul{
+    padding-left:0px;
+    align-items: flex-start;
+    margin-left: 0.1vw; 
+    padding-top: 1vw;  
+    padding-right: 0vw; 
+}
+.one span{
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+}
+@media (max-width:610px) {
+    .main{
+        display:flex;
+        flex-direction: column;
+    }
+    #techspan, #techspan1{
+        font-size: 15px;
+        line-height: 0rem;
+        padding-left: 2px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+}
+.technology ul{
+    list-style-type: none;
+    font-size:1.9vw;
+    line-height: 10px;
+    padding-block-start:0.5px;
+}
+}
+@media (min-width:610px) {
+    #techspan, #techspan1{
+        font-size: 25px;
+        line-height: 0px;
+        padding-left: 25px;
+        letter-spacing: 4px;
+        padding-bottom: 1px;
+    
+    }
+    .technology ul{
+        list-style-type: none;
+        font-size:.8rem;
+        line-height: 25px;
+        padding-block-start:0.5px;
+    }
+}
