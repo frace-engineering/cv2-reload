@@ -1,162 +1,96 @@
+*{
+    box-sizing:border-box;
+}
+
 body{
-    font-family: sans-serif;
-    margin-left:10px;
-    margin-top:0%;
-    margin-right:0%;
-    background-color: black;
-    padding-right:0%;
+    margin:0;
+    padding:0;
 }
-
-.goals,.frustrations{
-    width:70%
+.main{
+    width:80%;
+    margin:0 auto;
+    background-color:antiquewhite;
+    padding-left:10px;
 }
-
-.header{
-    background-color: #05f;
-    color:#fff;
-    height:8vw;
-    align-items: flex-start;
-    font-size: 3vw;
-    font-weight: 5vw;
-}
-.header h1{
-    margin:0px;
-    padding-left:5vw;
-}
-#image {
-    list-style-type:none;
-    background-color: #05f;
-    margin-top:0px;
-    color:#fff;
-    font-size: 1rem;
-    padding-right: 2rem;
-}
-.occupation ul{
-    list-style-type:none;
-    padding-top: 1px;
-}
-.occupation{
-    padding-top: 1px;
-}
-#occupation1 li{
-    padding-left:0px;
-    padding-right:0px;
-    padding-bottom:1px;
-    text-align:right;
-    font-size: 1.3rem;
-    color:#09f;
-}
-#occupation2 li{
-    padding-left:0px;
-    padding-bottom:8px;
-    text-align:left;
-    font-size: .7rem;
-}
-#occupation2 li:first-child{
-    padding-top: 0px;
+.image ul{
+    padding-inline-start: 14px;
 }
 .image ul li{
-    padding:8px 10px 8px 3px;
-    margin-left:4px;
-}
-.main{
-    display:flex;
-    flex-wrap: nowrap;
-}
-
-.main ul{
-    font-size: 0.7rem;
-}
-.biography{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-#biography li{
-    width:70%;
     list-style-type: none;
-} 
-.main h1{
-    padding-left:20px;
-    color:#09f;
-    font-weight: 600;
-    font-size: 2vw;
-    text-transform: uppercase;
+    padding-inline-start: 0px;
+}
+.occupation{
+    display:flex;
+}
+#occupation1{
+    text-align:right;
+    font-size:1.2rem;
+}
+#occupation2{
+    padding-left:2px;
+    padding-top:5px;
+    font-size:1.1rem;
+}
+#image-ul{
+    margin-top:-2px;
+    background-color:blue;
+    width:235px;
+    padding-top:0px;
+    font-size:1.2rem;
+    color:white;
 }
 .technology{
-    width:80%;
     display:flex;
-    justify-content: space-between;
-    padding-right:10px;
-    
+    justify-content:space-between;
 }
 .technology ul{
     list-style-type: none;
-    font-size:.7rem;
-    line-height: 15px;
-    padding-block-start:0.5px;
+    padding-inline-start: 5px;
 }
-#techspan, #techspan1{
-    font-size: 15px;
-    line-height: 0rem;
-    padding-left: 22px;
-    letter-spacing: 2px;
-    margin-bottom: 2px;
-
+.technology ul li{
+    padding-bottom:15px;
 }
-.main{
-background-color: #fff;
-padding-left:6vw;
+.column2{
+    box-sizing: border-box;
+    margin-right:5px;
 }
-.container{
-    padding-left:4vw;
-    padding-top:1vw;
+.column2 h1{
+    margin:0px;
 }
-
-.occupation .two ul{
-    padding-left:0px;
-    align-items: flex-start;
-    margin-left: 0.1vw; 
-    padding-top: 1vw;  
-    padding-right: 0vw; 
+.column2 ul{
+    margin-bottom:0px;
 }
-.one span{
-    color:black;
-    font-size: 15px;
-    font-weight: 600;
+.header h1{
+    background-color:blue;
+    margin-bottom:0px;
+    color:white;
+    font-size:3rem;
+    font-weight:800;
 }
-@media (max-width:610px) {
+@media only screen and (min-width:576px){
     .main{
+        background-color:beige;
+    }
+    .container{
         display:flex;
-        flex-direction: column;
     }
-    #techspan, #techspan1{
-        font-size: 15px;
-        line-height: 0rem;
-        padding-left: 2px;
-        letter-spacing: 1px;
-        margin-bottom: 5px;
-}
-.technology ul{
-    list-style-type: none;
-    font-size:1.9vw;
-    line-height: 10px;
-    padding-block-start:0.5px;
-}
-}
-@media (min-width:610px) {
-    #techspan, #techspan1{
-        font-size: 25px;
-        line-height: 0px;
-        padding-left: 25px;
-        letter-spacing: 4px;
-        padding-bottom: 1px;
+    #occupation1{
+        text-align:right;
+        font-size:1.2rem;
+    }
+    #occupation2 li{
+        padding-left:2px;
+        padding-bottom:5px;
+        font-size:0.9rem;
+    }
+    .column2{
+        padding-left:20px;
+    }
+    .column2 ul li{
+        font-size:0.7rem;
+    }
+    .techspan p{
+        margin:12px;
+    }
     
-    }
-    .technology ul{
-        list-style-type: none;
-        font-size:.8rem;
-        line-height: 25px;
-        padding-block-start:0.5px;
-    }
 }
